@@ -19,5 +19,5 @@
 |Graph type|URL|
 |---|---|
 |Direct|http://htmlpreview.github.io/?https://github.com/dunaevaa/cache/blob/master/direct.html|
-|Reverce|
-|Random|
+|Reverse|http://htmlpreview.github.io/?https://github.com/dunaevaa/cache/blob/master/reverse.html|
+|Random|http://htmlpreview.github.io/?https://github.com/dunaevaa/cache/blob/master/random.html|
