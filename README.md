@@ -18,6 +18,6 @@
 
 |Graph type|URL|
 |---|---|
-|Direct|
+|Direct|https://github.com/dunaevaa/cache/blob/master/direct.html|
 |Reverce|
 |Random|
