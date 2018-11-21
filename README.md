@@ -1,5 +1,5 @@
 # cache
-```
+
 | number exp    | Buffer Size   |  Direct Time  | Revercse Time | Random Time   |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | №1            | 16            | 19            | 19            | 19            |
