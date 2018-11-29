@@ -12,11 +12,10 @@ struct Node{
 
 struct Cache{
     std::vector<Node> exps;
-    void run();
+    bool run();
 };
 
-
-void Cache::run(){
+bool Cache::run(){
     int *array;
     unsigned int capacity = 4096;
     const unsigned int MAX_CACHE_SIZE = 11796480;
@@ -119,5 +118,5 @@ void Cache::run(){
         delete[] array;
         i++;
     }while(capacity < MAX_CACHE_SIZE*3/2);
-   
+ return true;  
 }
