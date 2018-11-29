@@ -79,7 +79,7 @@ void Cache::run(){
      
         
         array=new int[capacity];
-        for(unsigned int i = 0;i < capacity-1;i++){
+        for(unsigned int i = 0;i < capacity-1;++i){
                 array[i] = i+1;
         }
         array[capacity-1] = 0;
