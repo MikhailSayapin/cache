@@ -21,11 +21,11 @@ void Cache::run(){
     unsigned int capacity = 4096;
     const unsigned int MAX_CACHE_SIZE = 11796480;
     unsigned int i = 0;
-    bool as;
+   
     
     do{
         array=new int[capacity];
-        for(unsigned int i = 0;i < capacity-1;i++){
+        for(unsigned int i = 0;i < capacity-1;++i){
                 array[i] = i+1;
         }
         array[capacity-1] = 0;
@@ -35,8 +35,8 @@ void Cache::run(){
         
         //прямой обход
         auto timer_on = std::chrono::high_resolution_clock::now();
-        for(unsigned int i=0; i < 1000 ;i++){
-            for(unsigned int j=0;j<capacity;j++){
+        for(unsigned int i=0; i < 1000 ;++i){
+            for(unsigned int j=0;j<capacity;++j){
                 t=array[t];  
             }
         }
@@ -53,7 +53,7 @@ void Cache::run(){
   
         
         array=new int[capacity];
-        for(unsigned int i = 1; i < capacity; i++){
+        for(unsigned int i = 1; i < capacity; ++i){
                 array[i] = (i-1);
         }
         array[0] = capacity-1;
@@ -62,8 +62,8 @@ void Cache::run(){
         
         //обратный обход
         timer_on = std::chrono::high_resolution_clock::now();
-        for(unsigned int i=0; i < 1000 ;i++){
-            for(unsigned int j = 0; j < capacity ;j++){
+        for(unsigned int i=0; i < 1000 ;++i){
+            for(unsigned int j = 0; j < capacity ;++j){
                 t=array[t];
             }
         }
@@ -87,7 +87,7 @@ void Cache::run(){
         t = 0;
         
         
-        for(unsigned int i = 0; i < capacity*100; i++){
+        for(unsigned int i = 0; i < capacity*100; ++i){
             auto index1 = rand()%capacity;
             auto index2 = rand()%capacity;
             
@@ -99,8 +99,8 @@ void Cache::run(){
         
         //случайный обход
         timer_on = std::chrono::high_resolution_clock::now();
-        for(unsigned int i=0; i < 1000 ;i++){
-            for(unsigned int j=0;j<capacity;j++){
+        for(unsigned int i=0; i < 1000 ;++i){
+            for(unsigned int j=0;j<capacity;++j){
                 t=array[t];  
             }
         }
@@ -120,5 +120,5 @@ void Cache::run(){
         delete[] array;
         i++;
     }while(capacity < MAX_CACHE_SIZE*3/2);
-
+   
 }
