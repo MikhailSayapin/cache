@@ -21,7 +21,7 @@ void Cache::run(){
     unsigned int capacity = 4096;
     const unsigned int MAX_CACHE_SIZE = 11796480;
     unsigned int i = 0;
-    
+    bool as;
     
     do{
         array=new int[capacity];
